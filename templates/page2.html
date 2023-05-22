@@ -1,0 +1,15 @@
+{% extends "layouts/layout.html" %}
+
+{% block content%}
+
+<h1>Ass</h1>
+<form action="{{ url_for('page2') }}" method="post">
+    <label for="user_number">ENTER NUMBER:</label>
+    <input type="number" name="user_number">
+    <label for="user_thing">ENTER THING TO KISS:</label>
+    <input type="text" name="user_thing">
+    <button type="submit">Send</button>
+</form>
+<h3>I have kissed {{ number }} {{ thing }}</h3>
+
+{% endblock %}
